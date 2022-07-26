@@ -24,6 +24,7 @@ public class jkafka_demo {
 //                    System.out.println(record.value());
                     String r = record.offset() + "\t" + record.key() + "\t" + record.value();
                     System.out.println(r);
+                    System.out.println("addforbranch");
                 }
             }
         } catch (Exception ex) {

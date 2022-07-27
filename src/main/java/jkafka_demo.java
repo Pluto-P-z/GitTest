@@ -21,10 +21,10 @@ public class jkafka_demo {
                 for (ConsumerRecord<String, String> record : records) {
 //                    System.out.printf("comsumer:>>>>>offset = %d, key= %s , value = %s\n", record.offset(),
 //                            record.key(), record.value());
-//                    System.out.println(record.value());
-                    String r = record.offset() + "\t" + record.key() + "\t" + record.value();
-                    System.out.println(r);
-                    System.out.println("addforbranch");
+                    System.out.println(record.value());
+//                    String r = record.offset() + "\t" + record.key() + "\t" + record.value();
+//                    System.out.println(r);
+//                    System.out.println("addforbranch");
                 }
             }
         } catch (Exception ex) {
